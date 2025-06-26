@@ -21,16 +21,16 @@
         <div class="header-container__div">
           <ul class="header-container__list">
             <li class="header-container__item">
-              <a class="header-container__link" href="#">Main</a>
+              <a class="header-container__link" href="#hero">Main</a>
             </li>
             <li class="header-container__item">
-              <a class="header-container__link" href="#">Projects</a>
+              <a class="header-container__link" href="#projects">Projects</a>
             </li>
             <li class="header-container__item">
-              <a class="header-container__link" href="#">About me</a>
+              <a class="header-container__link" href="#about">About me</a>
             </li>
             <li class="header-container__item">
-              <a class="header-container__link" href="#">Contacts</a>
+              <a class="header-container__link" href="#contacts">Contacts</a>
             </li>
           </ul>
           <button class="header-container__button">Lingth theme</button>
@@ -38,7 +38,7 @@
       </section>
     </header>
     <main class="main">
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1 class="hero__title--greeting">Hello 👋</h1>
         <h2 class="hero__title">I am Mykhailo Shpeh - Front-End Developer</h2>
         <ul class="hero__list">
@@ -60,8 +60,8 @@
           </li>
         </ul>
       </section>
-      <section class="projects">
-        <h2 class="projects__title"></h2>
+      <section id="projects" class="projects">
+        <h2 class="projects__title">Projects</h2>
         <ul class="projects__list">
           <li class="projects__item">
             <a
@@ -91,11 +91,11 @@
             <a class="projects__link" href="#">Future project</a>
           </li>
           <li class="projects__item">
-            <a class="projects__link" href="#" Future project></a>
+            <a class="projects__link" href="#" >Future project</a>
           </li>
         </ul>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h2 class="about__title">About me</h2>
         <p class="about__text">
           I am a Junior Front-End Developer with skills in HTML, CSS/SASS, and
@@ -114,9 +114,10 @@
         <button class="arrangement__button">Arrange phone call</button>
       </section>
     </main>
+    <div class="gradient--footer"></div>
     <footer class="footer">
       <h2 class="footer__title">Contacts</h2>
-      <section class="footer-container">
+      <section id="contacts" class="footer-container">
         <ul class="footer-container__list">
           <li class="footer-container__item">
             <a
@@ -146,6 +147,5 @@
         </p>
       </section>
     </footer>
-    <div class="gradient--footer"></div>
   </body>
 </html>
