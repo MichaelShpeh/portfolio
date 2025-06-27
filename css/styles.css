@@ -305,6 +305,9 @@ body {
 
 .projects {
   margin-bottom: 100px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 479px) {
@@ -342,17 +345,10 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .projects__list {
-    height: 200px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .projects__list {
-    height: 150px;
-    flex-direction: column;
+    height: 325px;
+    align-items: center;
   }
 }
 
