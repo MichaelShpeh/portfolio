@@ -334,20 +334,18 @@ body {
 }
 
 .projects__list {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 50px;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 479px) {
   .projects__list {
     height: 200px;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
@@ -355,8 +353,6 @@ body {
   .projects__list {
     height: 150px;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
@@ -365,7 +361,6 @@ body {
     width: 700px;
     height: 50px;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
   }
 }
