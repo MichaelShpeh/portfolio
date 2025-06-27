@@ -334,6 +334,8 @@ body {
 }
 
 .projects__list {
+    width: 100%;
+    overflow-x: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
