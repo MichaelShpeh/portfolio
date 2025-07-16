@@ -33,14 +33,19 @@
               <a class="header-container__link" href="#contacts">Contacts</a>
             </li>
           </ul>
-          <button class="header-container__button">eng <span>uk</span></button>
+          <button class="header-container__button" id="btn-uk">Українська</button>
+          <button id="btn-en">English</button>
         </div>
       </section>
     </header>
     <main class="main">
       <section id="hero" class="hero">
-        <h1 class="hero__title--greeting">Hello 👋</h1>
-        <h2 class="hero__title">I am Mykhailo Shpeh - Front-End Developer</h2>
+        <h1 class="hero__title--greeting" data-i18n="heroTitleGreeting">
+          Hello 👋
+        </h1>
+        <h2 class="hero__title" data-i18n="heroTitle">
+          I am Mykhailo Shpeh - Front-End Developer
+        </h2>
         <ul class="hero__list">
           <li class="hero__item">
             <a class="hero__link" href="https://github.com/MichaelShpeh"
@@ -61,7 +66,7 @@
         </ul>
       </section>
       <section id="projects" class="projects">
-        <h2 class="projects__title">Projects</h2>
+        <h2 class="projects__title" data-i18n="projectsTitle">Projects</h2>
         <ul class="projects__list">
           <li class="projects__item">
             <a
@@ -91,32 +96,34 @@
             <a class="projects__link" href="#">Future project</a>
           </li>
           <li class="projects__item">
-            <a class="projects__link" href="#" >Future project</a>
+            <a class="projects__link" href="#">Future project</a>
           </li>
         </ul>
       </section>
       <section id="about" class="about">
-        <h2 class="about__title">About me</h2>
-        <p class="about__text">
+        <h2 class="about__title" data-i18n="aboutTitle">About me</h2>
+        <p class="about__text" data-i18n="aboutText">
           I am a Junior Front-End Developer with skills in HTML, CSS/SASS, and
           JavaScript. I am learning modern web development technologies and
           creating responsive, adaptive websites. I have experience with markup,
           basic JavaScript, and I am acquainted with version control systems
-          (Git). I am currently studying at GoITeens Academy. I am looking
+          (Git). I am currently studying at GoITeens School. I am looking
           forward to growing in front-end development by working on real
           projects and am open to new challenges.
         </p>
       </section>
       <section class="arrangement">
-        <h2 class="arrangement__title">
+        <h2 class="arrangement__title" data-i18n="arrangementTitle">
           I am excited about the possibility of working with you
         </h2>
-        <button class="arrangement__button">Arrange phone call</button>
+        <button class="arrangement__button" data-i18n="arrangementButton">
+          Arrange phone call
+        </button>
       </section>
     </main>
     <div class="gradient--footer"></div>
     <footer class="footer">
-      <h2 class="footer__title">Contacts</h2>
+      <h2 class="footer__title" data-i18n="footerButton">Contacts</h2>
       <section id="contacts" class="footer-container">
         <ul class="footer-container__list">
           <li class="footer-container__item">
@@ -142,10 +149,12 @@
             >
           </li>
         </ul>
-        <p class="footer-container__text">
+        <p class="footer-container__text" data-i18n="footerText">
           Mykhailo Shpeh 2025 &copy;. All rights reserved
         </p>
       </section>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
