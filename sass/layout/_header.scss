@@ -1,0 +1,148 @@
+body {
+  position: relative;
+  background-color: rgb(21, 21, 21);
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.gradient,
+.gradient--footer {
+  width: 100%;
+  position: absolute;
+  opacity: 0.3;
+  filter: blur(40px);
+  background: radial-gradient(circle, #f86bdf 0, rgba(107, 107, 248, 0.8) 100%);
+
+  &.gradient {
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+
+  &.gradient--footer {
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 479px) {
+      height: 305px;
+    }
+
+    @media (min-width: 480px) {
+      height: 200px;
+    }
+
+    @media (min-width: 768px) {
+      height: 100px;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
+  &-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width: 479px) {
+      max-width: 280px;
+    }
+
+    @media (min-width: 480px) {
+      max-width: 400px;
+      padding: 0 40px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+      padding: 0 30px;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 100%;
+      padding: 0 100px;
+      margin: 0;
+    }
+
+    @media (min-width: 1660px) {
+      max-width: none;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #6a0dad, #d580ff, #6a0dad);
+      background-size: 200%;
+      background-clip: text;
+      transition: 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: transparent;
+        animation: shine 2s linear infinite;
+      }
+    }
+
+    &__div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 479px) {
+        width: 90px;
+      }
+
+      @media (min-width: 480px) {
+        width: 100px;
+      }
+
+      @media (min-width: 768px) {
+        width: 450px;
+      }
+    }
+
+    &__list {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &__item,
+    &__button,
+    #btn-en {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: #444;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+
+    &__button {
+      @media (max-width: 374px) {
+        margin-left: -30px;
+      }
+    }
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}

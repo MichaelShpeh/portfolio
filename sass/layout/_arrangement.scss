@@ -1,0 +1,42 @@
+.arrangement {
+  margin: 0 auto;
+
+  @media (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.arrangement__title {
+  width: 950px;
+  font-size: 4rem;
+  text-align: start;
+  margin-bottom: 10px;
+
+  @media (max-width: 479px) {
+    width: 280px;
+    font-size: 3rem;
+  }
+
+  @media (min-width: 480px) {
+    width: 400px;
+    font-size: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    width: 700px;
+  }
+}
+
+.arrangement__button {
+  padding: 10px;
+  background-color: black;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.arrangement__button:hover {
+  background-color: #444;
+  transform: scale(1.1);
+  cursor: pointer;
+}

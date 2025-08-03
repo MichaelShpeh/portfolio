@@ -1,0 +1,58 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #34313b;
+  border-radius: 2%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    background: linear-gradient(90deg, #6a0dad, #d580ff, #6a0dad);
+    background-size: 200%;
+    background-clip: text;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: transparent;
+      animation: shine 2s linear infinite;
+    }
+  }
+}
+
+.btnclose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
