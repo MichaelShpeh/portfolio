@@ -32,11 +32,9 @@
 .arrangement__button {
   padding: 10px;
   background-color: black;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  @include animation;
 }
 
 .arrangement__button:hover {
-  background-color: #444;
-  transform: scale(1.1);
-  cursor: pointer;
+  @include hover;
 }

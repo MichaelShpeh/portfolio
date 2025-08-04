@@ -79,9 +79,7 @@
 
 .footer-container__list {
   width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-spbt;
 
   @media (max-width: 479px) {
     width: 320px;
@@ -106,11 +104,9 @@
 }
 
 .footer-container__link {
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  @include animation;
 }
 
 .footer-container__item:hover {
-  background-color: #444;
-  transform: scale(1.1);
-  cursor: pointer;
+  @include hover;
 }

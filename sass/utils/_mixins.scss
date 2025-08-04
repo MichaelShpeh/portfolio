@@ -1,0 +1,21 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin flex-spbt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @mixin animation {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  @mixin hover {
+    background-color: #444;
+        transform: scale(1.1);
+        cursor: pointer;
+  }
